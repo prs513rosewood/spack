@@ -53,6 +53,7 @@ class Tamaas(SConsPackage):
         depends_on("py-scipy", when="+solvers", type="run")
         depends_on("py-pybind11", type="build")
         depends_on("py-wheel", type="build")
+        depends_on("py-pip", type="build")
 
     def build_args(self, spec, prefix):
         args = [
